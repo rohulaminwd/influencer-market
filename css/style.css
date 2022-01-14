@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/*============ COMMON CSS END ========= */
+
+
+/*============ HEADER START ========= */
+/*============ HEADER END ========= */
+
+
+
+/*============ TOP SECTION START ========= */
+/*============ TOP SECTION END ========= */
+
+
+
+/*============ PRODUCT SECTION START ========= */
+/*============ PRODUCT SECTION END ========= */
+
+
+
+/*============ PRODUCT DETAILS START ========= */
+/*============ PRODUCT DETAILS END ========= */
+
+
+
+/*============ FOOTER SECTION START ========= */
+/*============ FOOTER SECTION END ========= */
+
+
+/*============ RESPONSIVE MEDIA START ========= */
+/*============ RESPONSIVE MEDIA END ========= */
