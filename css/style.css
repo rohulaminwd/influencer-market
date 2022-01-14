@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 *{
     margin: 0;
@@ -6,6 +7,7 @@
 }
 body{
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 a{
     text-decoration: none;
@@ -17,7 +19,7 @@ img{
     vertical-align: middle;
 }
 .container{
-    width: 1170px;
+    width: 1270px;
     margin: 0 auto;
 }
 
@@ -25,16 +27,116 @@ img{
 
 
 /*============ HEADER START ========= */
+header{
+    background-color: #0537a3;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.left-side h3{
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}.nav-manu ul{
+    display: flex;
+}
+.nav-manu ul li{
+    margin: 0 10px;
+}
+.nav-manu ul li a{
+    color: #fff;
+    font-size: 18px;
+   text-transform: uppercase;
+    padding: 10px 0;
+}
+.fs-24{
+    font-size: 24px;
+}
 /*============ HEADER END ========= */
 
 
 
 /*============ TOP SECTION START ========= */
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 30px;
+    margin: 50px 0;
+    background-image: linear-gradient(rgb(226, 196, 191), rgb(233, 224, 207));
+    border-radius: 10px;
+}
+.top-left h1{
+    font-size: 52px;
+    line-height: 70px;
+    font-weight: 700;
+}
+.top-left p{
+    font-size: 16px;
+    font-weight: 60;
+    margin: 20px 0;
+}
+.top-right .cemmara{
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/Circle\ design.svg) no-repeat center / cover;
+}
+.primary-btn{
+    padding: 10px 20px;
+    background-color: tomato;
+    border-radius: 20px;
+    color: #fff;
+    outline: 0;
+    border: 0;
+    margin-top: 10px;
+}
+.primary-btn a{
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+
+}
 /*============ TOP SECTION END ========= */
 
 
 
+/*============ BRAND SECTION START ========= */
+.brands{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    grid-gap: 30px;
+}
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+/*============ BRAND SECTION END ========= */
+
+
+
 /*============ PRODUCT SECTION START ========= */
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.product-item{
+    padding: 20px;
+    background-color: chocolate;
+}
+.product-img img{
+    width: 100%;
+}
+.product-item {
+    padding: 20px;
+}
 /*============ PRODUCT SECTION END ========= */
 
 
