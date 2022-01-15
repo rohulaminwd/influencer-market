@@ -19,7 +19,7 @@ img{
     vertical-align: middle;
 }
 .container{
-    width: 1170px;
+    max-width: 85%;
     margin: 0 auto;
 }
 .orang-color{
@@ -32,6 +32,7 @@ img{
 /*============ HEADER START ========= */
 header{
     background-color: #0537a3;
+    width: 100%;
 }
 header nav{
     display: flex;
@@ -51,11 +52,20 @@ header nav{
 .nav-manu ul li{
     margin: 0 10px;
 }
+.nav-bar{
+    display: none;
+    margin-right: 20px;
+}
 .nav-manu ul li a{
     color: #fff;
     font-size: 18px;
    text-transform: uppercase;
     padding: 10px 0;
+}
+.bar{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
 }
 .fs-24{
     font-size: 24px;
@@ -89,6 +99,9 @@ header nav{
     justify-content: center;
     background-image: url(../images/Circle\ design.svg) no-repeat center / cover;
 }
+.top-right .cemmara img{
+    min-width: 300px;
+}
 .primary-btn{
     padding: 10px 20px;
     background-color: tomato;
@@ -113,12 +126,15 @@ header nav{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
     grid-gap: 30px;
+    border-top: 1px solid #e2dede;
+    border-bottom: 1px solid #e2dede;
 }
 .brand{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
+    cursor: pointer;
 }
 /*============ BRAND SECTION END ========= */
 
@@ -127,16 +143,18 @@ header nav{
 /*============ PRODUCT SECTION START ========= */
 .products{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 320px); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
     grid-gap: 40px;
-    margin: 30px 0;
+    margin: 50px 0;
 }
 .product-item{
-    padding: 20px;
-    background-color: #dceee3;
+    padding: 10px;
+    /* width: 320px; */
+    /* background-color: #dceee3; */
     border-radius: 10px;
-    box-shadow: 0px 2px 5px #000;
-    
+    box-shadow: 0px 2px 10px rgb(100, 99, 99);
 }
 .product-img img{
     width: 100%;
@@ -168,8 +186,9 @@ header nav{
 
 /*============ FOOTER SECTION START ========= */
 footer{
-    background-color: #000;
-    padding: 30px;
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    padding: 50px 0;
 }
 .footer-content{
     text-align: center;
@@ -201,4 +220,36 @@ footer{
 
 
 /*============ RESPONSIVE MEDIA START ========= */
+
+@media screen and (min-width: 1200px) {
+    .container{
+        min-width: 1280px;
+    }
+    .products{
+        grid-template-columns: repeat(3, 350px);
+    }
+}
+@media screen and (max-width: 886px) {
+    .content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .top-left{
+        order: 2;
+        text-align: center;
+    }
+    .nav-manu{
+        display: none;
+    }
+    .nav-bar{
+        display: block;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .top-right .cemmara img{
+        width: 200px;
+    }
+  }
 /*============ RESPONSIVE MEDIA END ========= */
